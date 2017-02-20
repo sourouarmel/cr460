@@ -41,7 +41,7 @@ resource "google_dns_record_set" "www" {
   type = "A"
   ttl  = 300
 
-  managed_zone = "cr460lab"
+  managed_zone = "sourouarmel.cr460lab.com"
 
   rrdatas = ["${google_compute_instance.instance1.network_interface.0.access_config.0.assigned_nat_ip}"]
 }
